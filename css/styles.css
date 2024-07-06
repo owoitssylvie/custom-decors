@@ -28,12 +28,14 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjusted size to fit the frame */
+    height: 300px; /* Adjusted size to fit the frame */
 }
 
 .image-wrapper {
     position: relative;
-    width: 288px; /* Adjusted to match the frame size */
-    height: 288px; /* Adjusted to match the frame size */
+    width: 288px; /* Match the frame size */
+    height: 288px; /* Match the frame size */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -42,12 +44,15 @@ body {
 
 .default-profile {
     position: absolute;
-    width: 80%; /* Adjust size as needed */
-    height: 80%; /* Adjust size as needed */
+    width: 230px; /* Adjust size as needed */
+    height: 230px; /* Adjust size as needed */
     object-fit: cover;
     z-index: 1;
-    transform: translate(-10%, -10%); /* Adjust positioning as needed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
 }
+
 
 .frame {
     position: absolute;
@@ -58,8 +63,8 @@ body {
 }
 
 img {
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .download-link {
