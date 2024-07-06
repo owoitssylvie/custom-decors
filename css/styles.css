@@ -5,6 +5,7 @@ body {
     background-color: #313338; /* Desired background color */
     color: #f5f5f5; /* Ensure text is readable */
     text-align: center;
+    font-size: 18px; /* Increase the base font size */
 }
 
 .title-container {
@@ -13,6 +14,7 @@ body {
     background-color: #5865F2; /* Background color of the rectangle */
     border-radius: 12px; /* Rounded corners */
     margin-bottom: 10px; /* Adjust spacing as needed */
+    font-size: 24px; /* Increase font size for the title */
 }
 
 .description-container {
@@ -22,6 +24,7 @@ body {
 .description-container p {
     margin: 0;
     color: #f5f5f5; /* Ensure text is readable */
+    font-size: 20px; /* Increase font size for the description */
 }
 
 .description-container a {
