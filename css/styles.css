@@ -47,7 +47,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px; /* Adjusted size to fit the frame */
-    height: 300px; /* Adjusted size to fit the frame */
+    height: 340px; /* Increased height to make room for the download link */
 }
 
 .image-wrapper {
@@ -86,7 +86,7 @@ img {
 
 .download-link {
     position: absolute; /* Positioning the download link */
-    bottom: 5px; /* Adjust this value to move the button up or down */
+    bottom: 10px; /* Adjust this value to move the button up or down */
     left: 50%;
     transform: translateX(-50%);
     color: #007bff;
