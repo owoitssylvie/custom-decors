@@ -40,8 +40,8 @@ body {
     position: absolute;
     top: 10px; /* Adjusted */
     left: 10px; /* Adjusted */
-    width: 120px; /* Adjusted */
-    height: 120px; /* Adjusted */
+    width: 130px; /* Adjusted */
+    height: 130px; /* Adjusted */
     object-fit: cover;
     z-index: 1;
 }
