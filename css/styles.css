@@ -58,6 +58,10 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px; /* Adjusted size to fit the frame */
     height: 340px; /* Increased height to make room for the download link */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
 }
 
 .image-wrapper {
@@ -87,6 +91,9 @@ body {
     height: 288px; /* Fixed size */
     object-fit: cover;
     z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
 }
 
 img {
