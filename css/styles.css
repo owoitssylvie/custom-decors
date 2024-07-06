@@ -104,3 +104,8 @@ img {
     font-size: 24px; /* Increase font size */
     font-weight: bold; /* Make text bold */
 }
+
+.download-link:hover,
+.download-link:active {
+    text-decoration: underline; /* Underline text on hover and active */
+}
