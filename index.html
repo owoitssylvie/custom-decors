@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APNG Preview</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .item {
+            margin: 10px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        img {
+            max-width: 150px;
+            max-height: 150px;
+        }
+        .download-link {
+            display: block;
+            margin-top: 5px;
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>APNG Preview</h1>
+    <div class="container">
+        <!-- APNG items will be inserted here -->
+    </div>
+    <script>
+        const images = [
+            // Add your image filenames here
+            "image1.png",
+            "image2.png",
+            "image3.png",
+            "image4.png",
+            "image5.png",
+            "image6.png",
+            "image7.png",
+            "image8.png",
+            "image9.png",
+            "image10.png",
+            // Add more images as needed
+        ];
+
+        const container = document.querySelector('.container');
+
+        images.forEach(image => {
+            const item = document.createElement('div');
+            item.className = 'item';
+
+            const img = document.createElement('img');
+            img.src = `images/${image}`;
+            img.alt = image;
+
+            const link = document.createElement('a');
+            link.href = `images/${image}`;
+            link.className = 'download-link';
+            link.textContent = 'Download';
+            link.download = image;
+
+            item.appendChild(img);
+            item.appendChild(link);
+            container.appendChild(item);
+        });
+    </script>
+</body>
+</html>
