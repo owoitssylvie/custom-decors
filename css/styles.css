@@ -101,5 +101,6 @@ img {
     transform: translateX(-50%);
     color: #007bff;
     text-decoration: none;
-    font-size: 18px; /* Increase font size */
+    font-size: 24px; /* Increase font size */
+    font-weight: bold; /* Make text bold */
 }
