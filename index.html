@@ -35,9 +35,18 @@
             const item = document.createElement('div');
             item.className = 'item';
 
-            const img = document.createElement('img');
-            img.src = `images/${image}`;
-            img.alt = image;
+            const wrapper = document.createElement('div');
+            wrapper.className = 'image-wrapper';
+
+            const defaultProfile = document.createElement('img');
+            defaultProfile.src = 'images/default-profile.png';
+            defaultProfile.alt = 'Default Profile';
+            defaultProfile.className = 'default-profile';
+
+            const frame = document.createElement('img');
+            frame.src = `images/${image}`;
+            frame.alt = image;
+            frame.className = 'frame';
 
             const link = document.createElement('a');
             link.href = `images/${image}`;
@@ -45,7 +54,9 @@
             link.textContent = 'Download';
             link.download = image;
 
-            item.appendChild(img);
+            wrapper.appendChild(defaultProfile);
+            wrapper.appendChild(frame);
+            item.appendChild(wrapper);
             item.appendChild(link);
             container.appendChild(item);
         });
