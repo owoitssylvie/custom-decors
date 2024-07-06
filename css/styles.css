@@ -39,6 +39,7 @@ body {
 }
 
 .item {
+    position: relative; /* Added for positioning the download link */
     margin: 10px;
     border: 1px solid #ddd;
     padding: 10px;
@@ -84,9 +85,10 @@ img {
 }
 
 .download-link {
-    display: block;
-    margin-top: 0px; /* Move the button up */
+    position: absolute; /* Positioning the download link */
+    bottom: 5px; /* Adjust this value to move the button up or down */
+    left: 50%;
+    transform: translateX(-50%);
     color: #007bff;
     text-decoration: none;
-    padding-top: 5px;
 }
