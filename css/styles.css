@@ -72,6 +72,7 @@ body {
     align-items: center;
     justify-content: center;
     overflow: hidden; /* Ensure anything outside is hidden */
+    margin-top: -20px; /* Move the content up */
 }
 
 .default-profile {
