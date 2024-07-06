@@ -85,7 +85,8 @@ img {
 
 .download-link {
     display: block;
-    margin-top: 5px;
+    margin-top: 0px; /* Move the button up */
     color: #007bff;
     text-decoration: none;
+    padding-top: 5px;
 }
