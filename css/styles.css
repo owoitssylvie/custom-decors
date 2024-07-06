@@ -12,7 +12,16 @@ body {
     padding: 10px 20px;
     background-color: #5865F2; /* Background color of the rectangle */
     border-radius: 12px; /* Rounded corners */
-    margin-bottom: 20px;
+    margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.description-container {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.description-container p {
+    margin: 0;
+    color: #f5f5f5; /* Ensure text is readable */
 }
 
 .container {
@@ -52,7 +61,6 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); /* Center the image */
 }
-
 
 .frame {
     position: absolute;
