@@ -38,11 +38,11 @@ body {
 
 .default-profile {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    object-fit: cover; /* Ensures the image covers the container without stretching */
+    top: 10px; /* Adjusted */
+    left: 10px; /* Adjusted */
+    width: 130px; /* Adjusted */
+    height: 130px; /* Adjusted */
+    object-fit: cover;
     z-index: 1;
 }
 
