@@ -42,6 +42,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover; /* Ensures the image covers the container without stretching */
     z-index: 1;
 }
 
@@ -51,6 +52,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
+    object-fit: cover; /* Ensures the frame covers the container without stretching */
     z-index: 2;
 }
 
