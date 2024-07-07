@@ -77,8 +77,8 @@ body {
 
 .default-profile {
     position: absolute;
-    width: 230px; /* Adjust size as needed */
-    height: 230px; /* Adjust size as needed */
+    width: 240px; /* Increase size slightly */
+    height: 240px; /* Increase size slightly */
     object-fit: cover;
     z-index: 1;
     top: 50%;
