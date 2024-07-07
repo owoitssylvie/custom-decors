@@ -54,8 +54,8 @@ body {
     background-color: #6cb896;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 280px; /* Reduced width */
-    height: 320px; /* Reduced height */
+    width: 260px; /* Further reduced width */
+    height: 300px; /* Further reduced height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,8 +64,8 @@ body {
 
 .image-wrapper {
     position: relative;
-    width: 268px; /* Reduced width */
-    height: 268px; /* Reduced height */
+    width: 240px; /* Further reduced width */
+    height: 240px; /* Further reduced height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,8 +75,8 @@ body {
 
 .default-profile {
     position: absolute;
-    width: 220px; /* Reduced width */
-    height: 220px; /* Reduced height */
+    width: 200px; /* Further reduced width */
+    height: 200px; /* Further reduced height */
     object-fit: cover;
     z-index: 1;
     top: 50%;
@@ -86,8 +86,8 @@ body {
 
 .frame {
     position: absolute;
-    width: 268px; /* Reduced width */
-    height: 268px; /* Reduced height */
+    width: 240px; /* Further reduced width */
+    height: 240px; /* Further reduced height */
     object-fit: cover;
     z-index: 2;
     top: 50%;
@@ -107,7 +107,7 @@ img {
     transform: translateX(-50%);
     color: #007bff;
     text-decoration: none;
-    font-size: 20px; /* Reduced font size */
+    font-size: 18px; /* Further reduced font size */
     font-weight: bold;
 }
 
