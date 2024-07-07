@@ -125,41 +125,41 @@ img {
 
 @media (max-width: 768px) {
     .main-container {
-        transform: scale(1.2); /* Slightly increase scale for mobile */
+        transform: scale(0.9); /* Slightly increase scale for mobile */
         transform-origin: top center;
     }
 
     .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
         gap: 10px;
         justify-items: center;
     }
 
     .item {
-        width: 140px;
-        height: 200px;
+        width: 150px; /* Increase the width slightly */
+        height: 170px; /* Increase the height slightly */
         padding: 5px;
         margin: 10px 0;
     }
 
     .image-wrapper {
-        width: 120px;
-        height: 120px;
+        width: 140px; /* Scale up for mobile */
+        height: 140px;
     }
 
     .default-profile {
-        width: 100px;
-        height: 100px;
-    }
-
-    .frame {
-        width: 120px;
+        width: 120px; /* Scale up for mobile */
         height: 120px;
     }
 
+    .frame {
+        width: 140px; /* Scale up for mobile */
+        height: 140px;
+    }
+
     .download-link {
-        font-size: 14px;
+        font-size: 16px; /* Adjust font size for mobile */
         bottom: 5px;
     }
 }
