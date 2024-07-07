@@ -122,14 +122,18 @@ img {
 @media (max-width: 768px) {
     .container {
         display: grid;
-        grid-template-columns: repeat(3, minmax(100px, 1fr)); /* 3 columns on mobile */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
         gap: 10px; /* Gap between items */
         justify-items: center; /* Center items horizontally */
     }
 
     .item {
-        width: 90%; /* Adjust width to fit within columns */
-        max-width: 300px; /* Ensure it doesn't exceed the original size */
+        width: calc(50% - 20px); /* Adjust width to fit within columns with some margin */
         height: auto; /* Adjust height to fit content */
+    }
+
+    .image-wrapper {
+        width: 100%; /* Ensure image wrapper fits within item */
+        height: auto; /* Maintain aspect ratio */
     }
 }
