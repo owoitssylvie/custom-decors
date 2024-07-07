@@ -2,44 +2,44 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #313338; /* Desired background color */
-    color: #f5f5f5; /* Ensure text is readable */
+    background-color: #313338;
+    color: #f5f5f5;
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Align items at the top */
-    height: 100vh; /* Full height to center properly */
-    overflow: auto; /* Allow scrolling if content is taller than viewport */
+    align-items: flex-start;
+    height: 100vh;
+    overflow: auto;
 }
 
 .main-container {
-    transform: scale(0.75); /* Scale down the content */
-    transform-origin: top center; /* Center the scaling */
-    margin: 20px; /* Add margin for some breathing room */
+    transform: scale(0.75);
+    transform-origin: top center;
+    margin: 20px;
 }
 
 .title-container {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #5865F2; /* Background color of the rectangle */
-    border-radius: 12px; /* Rounded corners */
-    margin-bottom: 10px; /* Adjust spacing as needed */
-    font-size: 24px; /* Increase font size for the title */
+    background-color: #5865F2;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-size: 24px;
 }
 
 .description-container {
-    margin-bottom: 20px; /* Adjust spacing as needed */
+    margin-bottom: 20px;
 }
 
 .description-container p {
     margin: 0;
-    color: #f5f5f5; /* Ensure text is readable */
-    font-size: 20px; /* Increase font size for the description */
+    color: #f5f5f5;
+    font-size: 20px;
 }
 
 .description-container a {
-    color: #007bff; /* Link color */
-    text-decoration: underline; /* Underline link */
+    color: #007bff;
+    text-decoration: underline;
 }
 
 .container {
@@ -49,52 +49,52 @@ body {
 }
 
 .item {
-    position: relative; /* Added for positioning the download link */
+    position: relative;
     margin: 10px;
     border: 1px solid #ddd;
     padding: 10px;
-    background-color: #6cb896; /* New background color */
+    background-color: #6cb896;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Adjusted size to fit the frame */
-    height: 340px; /* Increased height to make room for the download link */
+    width: 300px;
+    height: 340px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
+    align-items: center;
+    justify-content: center;
 }
 
 .image-wrapper {
     position: relative;
-    width: 288px; /* Match the frame size */
-    height: 288px; /* Match the frame size */
+    width: 288px;
+    height: 288px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Ensure anything outside is hidden */
-    margin-top: -20px; /* Move the content up */
+    overflow: hidden;
+    margin-top: -20px;
 }
 
 .default-profile {
     position: absolute;
-    width: 240px; /* Increase size slightly */
-    height: 240px; /* Increase size slightly */
+    width: 240px;
+    height: 240px;
     object-fit: cover;
     z-index: 1;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the image */
+    transform: translate(-50%, -50%);
 }
 
 .frame {
     position: absolute;
-    width: 288px; /* Fixed size */
-    height: 288px; /* Fixed size */
+    width: 288px;
+    height: 288px;
     object-fit: cover;
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the image */
+    transform: translate(-50%, -50%);
 }
 
 img {
@@ -103,19 +103,19 @@ img {
 }
 
 .download-link {
-    position: absolute; /* Positioning the download link */
-    bottom: 10px; /* Adjust this value to move the button up or down */
+    position: absolute;
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     color: #007bff;
     text-decoration: none;
-    font-size: 24px; /* Increase font size */
-    font-weight: bold; /* Make text bold */
+    font-size: 24px;
+    font-weight: bold;
 }
 
 .download-link:hover,
 .download-link:active {
-    text-decoration: underline; /* Underline text on hover and active */
+    text-decoration: underline;
 }
 
 /* Media query for mobile devices */
@@ -128,25 +128,25 @@ img {
     }
 
     .item {
-        width: 100px; /* Adjusted width for 3 columns */
-        height: 160px; /* Adjusted height for 3 columns */
+        width: calc(33.33% - 20px); /* Slightly larger width to better fill space */
+        height: auto; /* Adjust height to fit content */
         padding: 5px; /* Reduce padding to fit content better */
         margin: 10px 0; /* Adjust margin for better spacing */
     }
 
     .image-wrapper {
-        width: 90px; /* Adjust width for 3 columns */
-        height: 90px; /* Adjust height for 3 columns */
+        width: 95%; /* Slightly larger to fit better */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .default-profile {
-        width: 75px; /* Adjust width for 3 columns */
-        height: 75px; /* Adjust height for 3 columns */
+        width: 95%; /* Slightly larger to fit better */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .frame {
-        width: 90px; /* Adjust width for 3 columns */
-        height: 90px; /* Adjust height for 3 columns */
+        width: 95%; /* Slightly larger to fit better */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .download-link {
