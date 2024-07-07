@@ -54,8 +54,8 @@ body {
     background-color: #6cb896;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 260px; /* Further reduced width */
-    height: 300px; /* Further reduced height */
+    width: 250px; /* Reduced width */
+    height: 280px; /* Reduced height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,8 +64,8 @@ body {
 
 .image-wrapper {
     position: relative;
-    width: 240px; /* Further reduced width */
-    height: 240px; /* Further reduced height */
+    width: 230px; /* Reduced width */
+    height: 230px; /* Reduced height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,8 +75,8 @@ body {
 
 .default-profile {
     position: absolute;
-    width: 200px; /* Further reduced width */
-    height: 200px; /* Further reduced height */
+    width: 200px; /* Reduced width */
+    height: 200px; /* Reduced height */
     object-fit: cover;
     z-index: 1;
     top: 50%;
@@ -86,8 +86,8 @@ body {
 
 .frame {
     position: absolute;
-    width: 240px; /* Further reduced width */
-    height: 240px; /* Further reduced height */
+    width: 230px; /* Reduced width */
+    height: 230px; /* Reduced height */
     object-fit: cover;
     z-index: 2;
     top: 50%;
@@ -107,7 +107,7 @@ img {
     transform: translateX(-50%);
     color: #007bff;
     text-decoration: none;
-    font-size: 18px; /* Further reduced font size */
+    font-size: 18px; /* Reduced font size */
     font-weight: bold;
 }
 
@@ -118,7 +118,7 @@ img {
 
 @media (min-width: 769px) {
     .main-container {
-        transform: scale(1); /* Ensure no scaling for PC version */
+        transform: scale(0.75); /* Reduce scale for PC version */
         transform-origin: top center;
     }
 }
