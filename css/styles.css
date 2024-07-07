@@ -128,6 +128,11 @@ img {
         transform: scale(0.75); /* Ensure proper scaling for PC version */
         transform-origin: top center;
     }
+
+    .default-profile {
+        width: 198px; /* Slightly reduced width */
+        height: 198px; /* Slightly reduced height */
+    }
 }
 
 @media (max-width: 768px) {
