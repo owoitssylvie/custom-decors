@@ -122,31 +122,31 @@ img {
 @media (max-width: 768px) {
     .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
         gap: 10px; /* Gap between items */
         justify-items: center; /* Center items horizontally */
     }
 
     .item {
-        width: 140px; /* Set fixed width */
-        height: 200px; /* Set fixed height */
+        width: 100px; /* Adjusted width for 3 columns */
+        height: 160px; /* Adjusted height for 3 columns */
         padding: 5px; /* Reduce padding to fit content better */
         margin: 10px 0; /* Adjust margin for better spacing */
     }
 
     .image-wrapper {
-        width: 120px; /* Scale down for mobile */
-        height: 120px; /* Scale down for mobile */
+        width: 90px; /* Adjust width for 3 columns */
+        height: 90px; /* Adjust height for 3 columns */
     }
 
     .default-profile {
-        width: 100px; /* Scale down for mobile */
-        height: 100px; /* Scale down for mobile */
+        width: 75px; /* Adjust width for 3 columns */
+        height: 75px; /* Adjust height for 3 columns */
     }
 
     .frame {
-        width: 120px; /* Scale down for mobile */
-        height: 120px; /* Scale down for mobile */
+        width: 90px; /* Adjust width for 3 columns */
+        height: 90px; /* Adjust height for 3 columns */
     }
 
     .download-link {
