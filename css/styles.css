@@ -51,7 +51,7 @@ body {
     margin: 10px;
     border: 1px solid #ddd;
     padding: 10px;
-    background-color: #6cb896; /* New background color */
+    background-color: #EB459E;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 300px;
@@ -116,41 +116,89 @@ img {
     text-decoration: underline;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
     .main-container {
-        transform: scale(2); /* Scale up to match 200% size */
-        transform-origin: top center; /* Center the scaling */
+        transform: scale(1); /* Ensure no scaling for PC version */
+        transform-origin: top center;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .main-container {
+        transform: scale(1.2); /* Scale up slightly for landscape mode */
+        transform-origin: top center;
     }
 
     .container {
         display: grid;
-        grid-template-columns: repeat(1, 1fr); /* Single column on mobile */
-        gap: 20px; /* Gap between items */
-        justify-items: center; /* Center items horizontally */
+        grid-template-columns: repeat(2, 1fr); /* Two columns in landscape mode */
+        gap: 10px;
+        justify-items: center;
     }
 
     .item {
-        width: 600px; /* Double the width */
-        height: 680px; /* Double the height */
+        width: calc(50% - 20px); /* Adjust width to fit two columns */
+        height: auto;
+        margin: 10px 0;
     }
 
     .image-wrapper {
-        width: 576px; /* Double the width */
-        height: 576px; /* Double the height */
+        width: 90%;
+        height: auto;
     }
 
     .default-profile {
-        width: 480px; /* Double the width */
-        height: 480px; /* Double the height */
+        width: 90%;
+        height: auto;
     }
 
     .frame {
-        width: 576px; /* Double the width */
-        height: 576px; /* Double the height */
+        width: 90%;
+        height: auto;
     }
 
     .download-link {
-        font-size: 48px; /* Double the font size */
-        bottom: 20px; /* Adjust position */
+        font-size: 18px; /* Adjust font size */
+        bottom: 5px;
+    }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+    .main-container {
+        transform: scale(1); /* Ensure no scaling for portrait mode */
+        transform-origin: top center;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr; /* Single column in portrait mode */
+        gap: 10px;
+        justify-items: center;
+    }
+
+    .item {
+        width: 100%; /* Full width in portrait mode */
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .image-wrapper {
+        width: 80%; /* Adjust width for portrait mode */
+        height: auto;
+    }
+
+    .default-profile {
+        width: 80%; /* Adjust width for portrait mode */
+        height: auto;
+    }
+
+    .frame {
+        width: 80%; /* Adjust width for portrait mode */
+        height: auto;
+    }
+
+    .download-link {
+        font-size: 16px; /* Adjust font size */
+        bottom: 5px;
     }
 }
