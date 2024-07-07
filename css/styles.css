@@ -117,3 +117,18 @@ img {
 .download-link:active {
     text-decoration: underline; /* Underline text on hover and active */
 }
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
+        gap: 10px; /* Gap between items */
+        justify-items: center; /* Center items horizontally */
+    }
+
+    .item {
+        width: 90%; /* Adjust width to fit within columns */
+        height: auto; /* Adjust height to fit content */
+    }
+}
