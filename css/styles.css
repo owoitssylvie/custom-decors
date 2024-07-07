@@ -128,22 +128,23 @@ img {
     }
 
     .item {
-        width: 90%; /* Adjust width to fit within columns */
+        width: 100%; /* Ensure the item fits within the column */
+        max-width: 300px; /* Ensure it doesn't exceed the original size */
         height: auto; /* Adjust height to fit content */
     }
 
     .image-wrapper {
-        width: 100%; /* Ensure image wrapper fits within item */
-        height: auto; /* Maintain aspect ratio */
+        width: 288px; /* Fixed width to maintain aspect ratio */
+        height: 288px; /* Fixed height to maintain aspect ratio */
     }
 
     .default-profile {
-        width: 90%; /* Ensure the profile image scales properly */
-        height: auto; /* Maintain aspect ratio */
+        width: 240px; /* Maintain aspect ratio */
+        height: 240px; /* Maintain aspect ratio */
     }
 
     .frame {
-        width: 100%; /* Ensure the frame scales properly */
-        height: auto; /* Maintain aspect ratio */
+        width: 288px; /* Maintain aspect ratio */
+        height: 288px; /* Maintain aspect ratio */
     }
 }
