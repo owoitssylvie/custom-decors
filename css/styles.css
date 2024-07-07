@@ -2,44 +2,44 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #313338;
-    color: #f5f5f5;
+    background-color: #313338; /* Desired background color */
+    color: #f5f5f5; /* Ensure text is readable */
     text-align: center;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    overflow: auto;
+    align-items: flex-start; /* Align items at the top */
+    height: 100vh; /* Full height to center properly */
+    overflow: auto; /* Allow scrolling if content is taller than viewport */
 }
 
 .main-container {
-    transform: scale(0.75);
-    transform-origin: top center;
-    margin: 20px;
+    transform: scale(0.75); /* Scale down the content */
+    transform-origin: top center; /* Center the scaling */
+    margin: 20px; /* Add margin for some breathing room */
 }
 
 .title-container {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #5865F2;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    font-size: 24px;
+    background-color: #5865F2; /* Background color of the rectangle */
+    border-radius: 12px; /* Rounded corners */
+    margin-bottom: 10px; /* Adjust spacing as needed */
+    font-size: 24px; /* Increase font size for the title */
 }
 
 .description-container {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adjust spacing as needed */
 }
 
 .description-container p {
     margin: 0;
-    color: #f5f5f5;
-    font-size: 20px;
+    color: #f5f5f5; /* Ensure text is readable */
+    font-size: 20px; /* Increase font size for the description */
 }
 
 .description-container a {
-    color: #007bff;
-    text-decoration: underline;
+    color: #007bff; /* Link color */
+    text-decoration: underline; /* Underline link */
 }
 
 .container {
@@ -49,51 +49,51 @@ body {
 }
 
 .item {
-    position: relative;
+    position: relative; /* Added for positioning the download link */
     margin: 10px;
     border: 1px solid #ddd;
     padding: 10px;
     background-color: #6cb896; /* New background color */
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 140px;
-    height: 160px;
+    width: 140px; /* Adjusted size to fit the frame */
+    height: 180px; /* Increased height to make room for the download link */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
 }
 
 .image-wrapper {
     position: relative;
-    width: 120px;
-    height: 120px;
+    width: 120px; /* Match the frame size */
+    height: 120px; /* Match the frame size */
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    overflow: hidden; /* Ensure anything outside is hidden */
 }
 
 .default-profile {
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 100px; /* Increase size slightly */
+    height: 100px; /* Increase size slightly */
     object-fit: cover;
     z-index: 1;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Center the image */
 }
 
 .frame {
     position: absolute;
-    width: 120px;
-    height: 120px;
+    width: 120px; /* Fixed size */
+    height: 120px; /* Fixed size */
     object-fit: cover;
     z-index: 2;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); /* Center the image */
 }
 
 img {
@@ -102,52 +102,87 @@ img {
 }
 
 .download-link {
-    position: absolute;
-    bottom: 5px;
+    position: absolute; /* Positioning the download link */
+    bottom: 10px; /* Adjust this value to move the button up or down */
     left: 50%;
     transform: translateX(-50%);
     color: #007bff;
     text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Make text bold */
 }
 
 .download-link:hover,
 .download-link:active {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline text on hover and active */
 }
 
+/* Media query for larger screens */
 @media (min-width: 769px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .item {
-        width: 300px;
-        height: 340px;
+        width: 300px; /* Adjusted size to fit the frame */
+        height: 340px; /* Increased height to make room for the download link */
     }
 
     .image-wrapper {
-        width: 288px;
-        height: 288px;
+        width: 288px; /* Match the frame size */
+        height: 288px; /* Match the frame size */
     }
 
     .default-profile {
-        width: 240px;
-        height: 240px;
+        width: 240px; /* Increase size slightly */
+        height: 240px; /* Increase size slightly */
     }
 
     .frame {
-        width: 288px;
-        height: 288px;
+        width: 288px; /* Fixed size */
+        height: 288px; /* Fixed size */
     }
 
     .download-link {
-        font-size: 24px;
-        bottom: 10px;
+        font-size: 24px; /* Increase font size */
+        bottom: 10px; /* Adjust position */
     }
 }
 
+/* Media query for mobile devices */
 @media (max-width: 768px) {
     .container {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
+        gap: 10px; /* Gap between items */
+        justify-items: center; /* Center items horizontally */
+    }
+
+    .item {
+        width: calc(100% / 3 - 20px); /* Adjust width to fit within columns */
+        height: auto; /* Adjust height to fit content */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .image-wrapper {
+        width: 90%; /* Scale down for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .default-profile {
+        width: 90%; /* Scale down for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .frame {
+        width: 90%; /* Scale down for mobile */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .download-link {
+        font-size: 14px; /* Adjust font size for mobile */
+        bottom: 5px; /* Adjust position for mobile */
     }
 }
