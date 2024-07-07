@@ -128,23 +128,28 @@ img {
     }
 
     .item {
-        width: 100%; /* Ensure the item fits within the column */
-        max-width: 300px; /* Ensure it doesn't exceed the original size */
+        width: calc(50% - 20px); /* Adjust width to fit within columns */
+        max-width: 150px; /* Ensure it doesn't exceed the original size */
         height: auto; /* Adjust height to fit content */
+        padding: 5px; /* Reduce padding to fit content better */
     }
 
     .image-wrapper {
-        width: 288px; /* Fixed width to maintain aspect ratio */
-        height: 288px; /* Fixed height to maintain aspect ratio */
+        width: 100%; /* Ensure image wrapper fits within item */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .default-profile {
-        width: 240px; /* Maintain aspect ratio */
-        height: 240px; /* Maintain aspect ratio */
+        width: 100px; /* Adjust size for mobile */
+        height: 100px; /* Adjust size for mobile */
     }
 
     .frame {
-        width: 288px; /* Maintain aspect ratio */
-        height: 288px; /* Maintain aspect ratio */
+        width: 150px; /* Adjust size for mobile */
+        height: 150px; /* Adjust size for mobile */
+    }
+
+    .download-link {
+        font-size: 14px; /* Adjust font size for mobile */
     }
 }
