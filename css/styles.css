@@ -128,28 +128,28 @@ img {
     }
 
     .item {
-        width: 90%; /* Ensure the item fits within the column */
-        max-width: 300px; /* Ensure it doesn't exceed the original size */
-        height: auto; /* Adjust height to fit content */
-        margin: 10px 0; /* Adjust margin for better spacing */
+        width: 140px; /* Set fixed width */
+        height: 160px; /* Set fixed height */
+        padding: 5px; /* Reduce padding to fit content better */
     }
 
     .image-wrapper {
-        width: 90%; /* Scale down for mobile */
-        height: auto; /* Maintain aspect ratio */
+        width: 120px; /* Scale down for mobile */
+        height: 120px; /* Scale down for mobile */
     }
 
     .default-profile {
-        width: 90%; /* Scale down for mobile */
-        height: auto; /* Maintain aspect ratio */
+        width: 100px; /* Scale down for mobile */
+        height: 100px; /* Scale down for mobile */
     }
 
     .frame {
-        width: 90%; /* Scale down for mobile */
-        height: auto; /* Maintain aspect ratio */
+        width: 120px; /* Scale down for mobile */
+        height: 120px; /* Scale down for mobile */
     }
 
     .download-link {
         font-size: 14px; /* Adjust font size for mobile */
+        bottom: 5px; /* Adjust position for mobile */
     }
 }
