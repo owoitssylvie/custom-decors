@@ -75,8 +75,8 @@ body {
 
 .default-profile {
     position: absolute;
-    width: 200px; /* Adjusted width */
-    height: 200px; /* Adjusted height */
+    width: 190px; /* Further reduced width */
+    height: 190px; /* Further reduced height */
     object-fit: cover;
     z-index: 1;
     top: 50%;
@@ -130,8 +130,8 @@ img {
     }
 
     .default-profile {
-        width: 198px; /* Slightly reduced width */
-        height: 198px; /* Slightly reduced height */
+        width: 180px; /* Further reduced width */
+        height: 180px; /* Further reduced height */
     }
 }
 
