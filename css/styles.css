@@ -128,12 +128,22 @@ img {
     }
 
     .item {
-        width: calc(50% - 20px); /* Adjust width to fit within columns with some margin */
+        width: 90%; /* Adjust width to fit within columns */
         height: auto; /* Adjust height to fit content */
     }
 
     .image-wrapper {
         width: 100%; /* Ensure image wrapper fits within item */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .default-profile {
+        width: 90%; /* Ensure the profile image scales properly */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .frame {
+        width: 100%; /* Ensure the frame scales properly */
         height: auto; /* Maintain aspect ratio */
     }
 }
