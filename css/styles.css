@@ -54,8 +54,8 @@ body {
     background-color: #6cb896;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    height: 340px;
+    width: 280px; /* Reduced width */
+    height: 320px; /* Reduced height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,8 +64,8 @@ body {
 
 .image-wrapper {
     position: relative;
-    width: 288px;
-    height: 288px;
+    width: 268px; /* Reduced width */
+    height: 268px; /* Reduced height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,8 +75,8 @@ body {
 
 .default-profile {
     position: absolute;
-    width: 240px;
-    height: 240px;
+    width: 220px; /* Reduced width */
+    height: 220px; /* Reduced height */
     object-fit: cover;
     z-index: 1;
     top: 50%;
@@ -86,8 +86,8 @@ body {
 
 .frame {
     position: absolute;
-    width: 288px;
-    height: 288px;
+    width: 268px; /* Reduced width */
+    height: 268px; /* Reduced height */
     object-fit: cover;
     z-index: 2;
     top: 50%;
@@ -107,7 +107,7 @@ img {
     transform: translateX(-50%);
     color: #007bff;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 20px; /* Reduced font size */
     font-weight: bold;
 }
 
@@ -125,7 +125,7 @@ img {
 
 @media (max-width: 768px) {
     .main-container {
-        transform: scale(0.9); /* Slightly increase scale for mobile */
+        transform: scale(0.85); /* Slightly reduced scale for mobile */
         transform-origin: top center;
     }
 
@@ -137,29 +137,29 @@ img {
     }
 
     .item {
-        width: 150px; /* Increase the width slightly */
-        height: 170px; /* Increase the height slightly */
+        width: 135px; /* Slightly reduced width */
+        height: 170px; /* Slightly reduced height */
         padding: 5px;
         margin: 10px 0;
     }
 
     .image-wrapper {
-        width: 140px; /* Scale up for mobile */
-        height: 140px;
+        width: 125px; /* Slightly reduced width */
+        height: 125px; /* Slightly reduced height */
     }
 
     .default-profile {
-        width: 120px; /* Scale up for mobile */
-        height: 120px;
+        width: 105px; /* Slightly reduced width */
+        height: 105px; /* Slightly reduced height */
     }
 
     .frame {
-        width: 140px; /* Scale up for mobile */
-        height: 140px;
+        width: 125px; /* Slightly reduced width */
+        height: 125px; /* Slightly reduced height */
     }
 
     .download-link {
-        font-size: 16px; /* Adjust font size for mobile */
+        font-size: 12px; /* Slightly reduced font size */
         bottom: 5px;
     }
 }
