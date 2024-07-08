@@ -29,6 +29,11 @@
             <!-- APNG items will be inserted here -->
         </div>
     </div>
+    <footer>
+        <p>This website is non-commercial, no ads and open source.</p>
+        <p>As such, all images hosted on this site are licensed under fair use. They were sourced via public domain.</p>
+        <p><a href="https://pastebin.com/QHKRuwd2">Check out the credits</a></p>
+    </footer>
     <script>
         const images = [
             // Add your image filenames here
@@ -483,39 +488,39 @@
             "image449.png",
             "image450.png",
             // Add more images as needed
-            ];
+        ];
 
-const container = document.querySelector('.container');
+        const container = document.querySelector('.container');
 
-images.forEach(image => {
-    const item = document.createElement('div');
-    item.className = 'item';
+        images.forEach(image => {
+            const item = document.createElement('div');
+            item.className = 'item';
 
-    const wrapper = document.createElement('div');
-    wrapper.className = 'image-wrapper';
+            const wrapper = document.createElement('div');
+            wrapper.className = 'image-wrapper';
 
-    const defaultProfile = document.createElement('img');
-    defaultProfile.src = 'images/default-profile.png';
-    defaultProfile.alt = 'Default Profile';
-    defaultProfile.className = 'default-profile';
+            const defaultProfile = document.createElement('img');
+            defaultProfile.src = 'images/default-profile.png';
+            defaultProfile.alt = 'Default Profile';
+            defaultProfile.className = 'default-profile';
 
-    const frame = document.createElement('img');
-    frame.src = `images/${image}`;
-    frame.alt = image;
-    frame.className = 'frame';
+            const frame = document.createElement('img');
+            frame.src = `images/${image}`;
+            frame.alt = image;
+            frame.className = 'frame';
 
-    const link = document.createElement('a');
-    link.href = `images/${image}`;
-    link.className = 'download-link';
-    link.textContent = 'Download';
-    link.download = image;
+            const link = document.createElement('a');
+            link.href = `images/${image}`;
+            link.className = 'download-link';
+            link.textContent = 'Download';
+            link.download = image;
 
-    wrapper.appendChild(defaultProfile);
-    wrapper.appendChild(frame);
-    item.appendChild(wrapper);
-    item.appendChild(link);
-    container.appendChild(item);
-});
-</script>
+            wrapper.appendChild(defaultProfile);
+            wrapper.appendChild(frame);
+            item.appendChild(wrapper);
+            item.appendChild(link);
+            container.appendChild(item);
+        });
+    </script>
 </body>
 </html>
