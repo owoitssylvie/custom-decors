@@ -20,7 +20,7 @@ body {
 .main-container {
     display: flex;
     flex-direction: column;
-    flex: 1;
+    flex-grow: 1;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto; /* Center align the main container */
@@ -54,7 +54,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: flex-start; /* Align items at the top */
     flex-grow: 1;
+    margin-bottom: 0; /* Remove bottom margin */
 }
 
 .item {
