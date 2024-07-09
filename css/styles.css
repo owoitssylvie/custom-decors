@@ -14,7 +14,7 @@ body {
 }
 
 .top-image {
-    width: 50px; /* Further reduced width */
+    width: 150px; /* Adjusted width */
     height: auto;
     margin-top: 20px;
 }
