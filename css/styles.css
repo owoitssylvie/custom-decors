@@ -14,7 +14,7 @@ body {
 }
 
 .header-image {
-    width: 150px; /* Adjust the width as needed */
+    width: 100px; /* Reduced width */
     height: auto;
     margin-top: 20px;
 }
