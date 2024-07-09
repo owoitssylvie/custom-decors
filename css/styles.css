@@ -6,24 +6,14 @@ body {
     color: #f5f5f5;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    width: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow: auto;
 }
 
 .main-container {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px;
 }
 
 .title-container {
@@ -54,8 +44,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    flex-grow: 1;
 }
 
 .item {
@@ -66,8 +54,8 @@ body {
     background-color: #6cb896;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-    height: 280px;
+    width: 250px; /* Adjusted width */
+    height: 280px; /* Adjusted height */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -76,8 +64,8 @@ body {
 
 .image-wrapper {
     position: relative;
-    width: 230px;
-    height: 230px;
+    width: 230px; /* Adjusted width */
+    height: 230px; /* Adjusted height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,8 +75,8 @@ body {
 
 .default-profile {
     position: absolute;
-    width: 190px;
-    height: 190px;
+    width: 190px; /* Further reduced width */
+    height: 190px; /* Further reduced height */
     object-fit: cover;
     z-index: 1;
     top: 50%;
@@ -98,8 +86,8 @@ body {
 
 .frame {
     position: absolute;
-    width: 230px;
-    height: 230px;
+    width: 230px; /* Adjusted width */
+    height: 230px; /* Adjusted height */
     object-fit: cover;
     z-index: 2;
     top: 50%;
@@ -119,7 +107,7 @@ img {
     transform: translateX(-50%);
     color: #007bff;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 18px; /* Adjusted font size */
     font-weight: bold;
 }
 
@@ -128,84 +116,68 @@ img {
     text-decoration: underline;
 }
 
-footer {
-    padding: 10px 0;
-    background-color: #313338;
+.additional-text {
+    margin-top: 20px;
     color: #f5f5f5;
-    text-align: center;
-    width: 100%;
-    margin-top: auto; /* Ensure the footer is pushed to the bottom */
-}
-
-footer p {
-    margin: 5px 0;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 @media (min-width: 1200px) {
-    footer p {
-        font-size: 16px;
-    }
-
     .container {
         display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 10px;
-        justify-items: center;
+        grid-template-columns: repeat(6, 1fr); /* 6 columns on PC */
+        gap: 10px; /* Gap between items */
+        justify-items: center; /* Center items horizontally */
     }
 
     .main-container {
-        transform: scale(0.75);
+        transform: scale(0.75); /* Ensure proper scaling for PC version */
         transform-origin: top center;
     }
 
     .default-profile {
-        width: 180px;
-        height: 180px;
+        width: 185px; /* Further reduced width */
+        height: 185px; /* Further reduced height */
     }
 }
 
 @media (max-width: 768px) {
     .main-container {
-        transform: scale(0.85);
+        transform: scale(0.85); /* Slightly reduced scale for mobile */
         transform-origin: top center;
     }
 
     .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
         gap: 10px;
         justify-items: center;
     }
 
     .item {
-        width: 135px;
-        height: 170px;
+        width: 135px; /* Slightly reduced width */
+        height: 170px; /* Slightly reduced height */
         padding: 5px;
         margin: 10px 0;
     }
 
     .image-wrapper {
-        width: 125px;
-        height: 125px;
+        width: 125px; /* Slightly reduced width */
+        height: 125px; /* Slightly reduced height */
     }
 
     .default-profile {
-        width: 105px;
-        height: 105px;
+        width: 105px; /* Slightly reduced width */
+        height: 105px; /* Slightly reduced height */
     }
 
     .frame {
-        width: 125px;
-        height: 125px;
+        width: 125px; /* Slightly reduced width */
+        height: 125px; /* Slightly reduced height */
     }
 
     .download-link {
-        font-size: 12px;
+        font-size: 12px; /* Slightly reduced font size */
         bottom: 5px;
-    }
-
-    footer p {
-        font-size: 14px;
     }
 }
