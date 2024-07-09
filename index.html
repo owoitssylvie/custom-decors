@@ -512,11 +512,13 @@
             defaultProfile.src = 'images/default-profile.png';
             defaultProfile.alt = 'Default Profile';
             defaultProfile.className = 'default-profile';
+            defaultProfile.loading = 'lazy';  // Lazy load default profile
 
             const frame = document.createElement('img');
             frame.src = `images/${image}`;
             frame.alt = image;
             frame.className = 'frame';
+            frame.loading = 'lazy';  // Lazy load frame
 
             const link = document.createElement('a');
             link.href = `images/${image}`;
