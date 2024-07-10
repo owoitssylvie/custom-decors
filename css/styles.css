@@ -52,12 +52,13 @@ body {
     margin-bottom: 20px;
     text-align: left; /* Aligns the text to the left */
     padding-left: 20px; /* Adds some padding to the left for better alignment */
+    margin-left: 10px; /* Move it slightly to the left */
 }
 
 .new-releases {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start; /* Align items to the left */
 }
 
 .container {
@@ -173,6 +174,10 @@ img {
         width: 185px;
         height: 185px;
     }
+
+    .new-releases-container {
+        padding-left: 10px; /* Adjust padding for larger screens */
+    }
 }
 
 @media (max-width: 768px) {
@@ -214,5 +219,9 @@ img {
     .download-link {
         font-size: 12px;
         bottom: 5px;
+    }
+
+    .new-releases-container {
+        padding-left: 5px; /* Adjust padding for smaller screens */
     }
 }
