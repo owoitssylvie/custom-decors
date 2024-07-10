@@ -85,7 +85,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: hidden; /* Ensure the badge is within the item bounds */
+    overflow: visible; /* Ensure the badge is within the item bounds */
 }
 
 .image-wrapper {
@@ -150,7 +150,7 @@ img {
 
 .new-badge {
     position: absolute;
-    top: -15px; /* Moves the badge higher */
+    top: -20px; /* Moves the badge higher */
     right: 10px;
     background-color: #e74c3c;
     color: white;
