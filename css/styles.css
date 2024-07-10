@@ -50,6 +50,8 @@ body {
 .new-releases-container {
     width: 100%;
     margin-bottom: 20px;
+    text-align: left; /* Aligns the text to the left */
+    padding-left: 20px; /* Adds some padding to the left for better alignment */
 }
 
 .new-releases {
@@ -142,7 +144,7 @@ img {
 
 .new-badge {
     position: absolute;
-    top: 10px;
+    top: 0px; /* Moves the badge up */
     right: 10px;
     background-color: #e74c3c;
     color: white;
