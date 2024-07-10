@@ -88,7 +88,7 @@ body {
 }
 
 .new-releases .item {
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Add white glow to new releases items */
+    box-shadow: 0 0 15px 5px rgba(214, 157, 250, 0.5); /* Add soft purple glow to new releases items */
 }
 
 .image-wrapper {
