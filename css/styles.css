@@ -62,8 +62,6 @@ body {
     flex-wrap: wrap;
     justify-content: flex-start; /* Align items to the left */
     margin-left: -10px; /* Adjust margin for better alignment */
-    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Add white glow */
-    border-radius: 12px; /* Optional: Add border radius to match the theme */
 }
 
 .container {
@@ -87,6 +85,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.new-releases .item {
+    box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.5); /* Add white glow to new releases items */
 }
 
 .image-wrapper {
