@@ -149,8 +149,8 @@ img {
 
 .new-badge {
     position: absolute;
-    top: 5px; /* Adjusted to be inside the frame */
-    right: 5px; /* Adjusted to be inside the frame */
+    top: -10px; /* Moves the badge higher */
+    right: 10px;
     background-color: #e74c3c;
     color: white;
     border-radius: 50%;
