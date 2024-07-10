@@ -49,7 +49,7 @@ body {
 
 .new-releases-container {
     width: calc(100% - 40px); /* Adjust width to match container with margins */
-    margin-bottom: 20px;
+    margin-bottom: 40px; /* Increase margin bottom to create a gap */
     text-align: left; /* Aligns the text to the left */
 }
 
