@@ -14,7 +14,7 @@ body {
 }
 
 .top-image {
-    width: 150px; /* Adjusted width */
+    width: 150px;
     height: auto;
     margin-top: 20px;
 }
@@ -47,6 +47,17 @@ body {
     text-decoration: underline;
 }
 
+.new-releases-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.new-releases {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -61,8 +72,8 @@ body {
     background-color: #6cb896;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Adjusted width */
-    height: 280px; /* Adjusted height */
+    width: 250px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,8 +82,8 @@ body {
 
 .image-wrapper {
     position: relative;
-    width: 230px; /* Adjusted width */
-    height: 230px; /* Adjusted height */
+    width: 230px;
+    height: 230px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,8 +93,8 @@ body {
 
 .default-profile {
     position: absolute;
-    width: 190px; /* Further reduced width */
-    height: 190px; /* Further reduced height */
+    width: 190px;
+    height: 190px;
     object-fit: cover;
     z-index: 1;
     top: 50%;
@@ -93,8 +104,8 @@ body {
 
 .frame {
     position: absolute;
-    width: 230px; /* Adjusted width */
-    height: 230px; /* Adjusted height */
+    width: 230px;
+    height: 230px;
     object-fit: cover;
     z-index: 2;
     top: 50%;
@@ -114,7 +125,7 @@ img {
     transform: translateX(-50%);
     color: #007bff;
     text-decoration: none;
-    font-size: 18px; /* Adjusted font size */
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -129,62 +140,77 @@ img {
     font-size: 18px;
 }
 
+.new-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e74c3c;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    z-index: 3;
+}
+
 @media (min-width: 1200px) {
+    .new-releases,
     .container {
         display: grid;
-        grid-template-columns: repeat(6, 1fr); /* 6 columns on PC */
-        gap: 10px; /* Gap between items */
-        justify-items: center; /* Center items horizontally */
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        justify-items: center;
     }
 
     .main-container {
-        transform: scale(0.75); /* Ensure proper scaling for PC version */
+        transform: scale(0.75);
         transform-origin: top center;
     }
 
     .default-profile {
-        width: 185px; /* Further reduced width */
-        height: 185px; /* Further reduced height */
+        width: 185px;
+        height: 185px;
     }
 }
 
 @media (max-width: 768px) {
     .main-container {
-        transform: scale(0.85); /* Slightly reduced scale for mobile */
+        transform: scale(0.85);
         transform-origin: top center;
     }
 
+    .new-releases,
     .container {
         display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 columns on mobile */
+        grid-template-columns: repeat(3, 1fr);
         gap: 10px;
         justify-items: center;
     }
 
     .item {
-        width: 135px; /* Slightly reduced width */
-        height: 170px; /* Slightly reduced height */
+        width: 135px;
+        height: 170px;
         padding: 5px;
         margin: 10px 0;
     }
 
     .image-wrapper {
-        width: 125px; /* Slightly reduced width */
-        height: 125px; /* Slightly reduced height */
+        width: 125px;
+        height: 125px;
     }
 
     .default-profile {
-        width: 105px; /* Slightly reduced width */
-        height: 105px; /* Slightly reduced height */
+        width: 105px;
+        height: 105px;
     }
 
     .frame {
-        width: 125px; /* Slightly reduced width */
-        height: 125px; /* Slightly reduced height */
+        width: 125px;
+        height: 125px;
     }
 
     .download-link {
-        font-size: 12px; /* Slightly reduced font size */
+        font-size: 12px;
         bottom: 5px;
     }
 }
