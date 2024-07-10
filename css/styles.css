@@ -149,7 +149,7 @@ img {
 
 .new-badge {
     position: absolute;
-    top: 0px; /* Moves the badge up */
+    top: -10px; /* Moves the badge higher */
     right: 10px;
     background-color: #e74c3c;
     color: white;
