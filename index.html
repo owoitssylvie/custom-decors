@@ -538,7 +538,7 @@
         const container = document.querySelector('.container');
         const newReleasesContainer = document.querySelector('.new-releases');
 
-        function createItem(image) {
+        function createItem(image, isNew = false) {
             const item = document.createElement('div');
             item.className = 'item';
 
@@ -568,15 +568,19 @@
             item.appendChild(wrapper);
             item.appendChild(link);
             
+            if (isNew) {
+                const newBadge = document.createElement('img');
+                newBadge.src = 'new.png';
+                newBadge.alt = 'New';
+                newBadge.className = 'new-badge';
+                item.appendChild(newBadge);
+            }
+            
             return item;
         }
 
         newImages.forEach(image => {
-            const item = createItem(image);
-            const newBadge = document.createElement('div');
-            newBadge.className = 'new-badge';
-            newBadge.textContent = 'NEW';
-            item.querySelector('.image-wrapper').appendChild(newBadge);
+            const item = createItem(image, true);
             newReleasesContainer.appendChild(item);
         });
 
