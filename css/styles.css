@@ -151,6 +151,13 @@ img {
     font-size: 18px;
 }
 
+.additional-text a:link,
+.additional-text a:visited,
+.additional-text a:hover,
+.additional-text a:active {
+    color: #007bff; /* Force the link color to always be blue */
+}
+
 .new-badge {
     position: absolute;
     top: 5px; /* Adjusted to be inside the frame */
