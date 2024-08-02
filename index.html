@@ -26,20 +26,27 @@
     <meta property="og:site_name" content="The Largest Collection Of">
 </head>
 <body>
+    <div class="language-selector">
+        <select id="language-dropdown" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <!-- Add more languages as needed -->
+        </select>
+    </div>
     <div class="main-container">
         <div class="image-container">
             <img src="decor.png" alt="Decor" class="top-image">
         </div>
         <div class="title-container">
-            <h1>Custom Avatar Decors</h1>
+            <h1 id="title">Custom Avatar Decors</h1>
         </div>
         <div class="description-container">
-            <p>The largest collection of Avatar Decorations for the Decor Vencord Plugin.<br>
+            <p id="description">The largest collection of Avatar Decorations for the Decor Vencord Plugin.<br>
             You can download Vencord <a href="https://vencord.dev/">here</a>. After Vencord is installed, go to Discord Settings -> Plugins and enable Decor!<br>
             You'll need to change the metadata of each decoration by reuploading to <a href="https://www.strerr.com/en/md5_hash_chanager.html">this site</a> and then re-downloading.</p>
         </div>
         <div class="new-releases-container">
-            <h2>New Releases:</h2>
+            <h2 id="new-releases-title">New Releases:</h2>
             <div class="new-releases">
                 <!-- New items will be inserted here -->
             </div>
@@ -48,9 +55,9 @@
             <!-- APNG items will be inserted here -->
         </div>
         <div class="additional-text">
-            <p>This website is non-commercial, no ads and open source.</p>
-            <p>As such, all images hosted on this site are licensed under fair use. They were sourced via public domain.</p>
-            <p><a href="https://pastebin.com/JD5YksYv">Check out the credits</a></p>
+            <p id="additional-text-1">This website is non-commercial, no ads and open source.</p>
+            <p id="additional-text-2">As such, all images hosted on this site are licensed under fair use. They were sourced via public domain.</p>
+            <p><a id="credits-link" href="https://pastebin.com/JD5YksYv">Check out the credits</a></p>
         </div>
     </div>
     <script>
@@ -685,5 +692,7 @@
             container.appendChild(item);
         });
     </script>
+    <script src="js/translations.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
