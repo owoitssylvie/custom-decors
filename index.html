@@ -28,14 +28,13 @@
 <body>
     <div class="language-selector">
         <label for="language">Language:</label>
-        <select id="language">
+        <select id="language-dropdown" onchange="changeLanguage()">
             <option value="en">English</option>
             <option value="ar">Arabic</option>
             <option value="es">Spanish</option>
             <option value="fr">French</option>
             <option value="de">German</option>
         </select>
-    </div>
     </div>
     <div class="main-container">
         <div class="image-container">
@@ -640,63 +639,63 @@
             "image539.png",
             "image540.png",
             // Add more images as needed
-        ];
+            ];
 
-        const container = document.querySelector('.container');
-        const newReleasesContainer = document.querySelector('.new-releases');
+const container = document.querySelector('.container');
+const newReleasesContainer = document.querySelector('.new-releases');
 
-        function createItem(image, isNew = false) {
-            const item = document.createElement('div');
-            item.className = 'item';
+function createItem(image, isNew = false) {
+    const item = document.createElement('div');
+    item.className = 'item';
 
-            const wrapper = document.createElement('div');
-            wrapper.className = 'image-wrapper';
+    const wrapper = document.createElement('div');
+    wrapper.className = 'image-wrapper';
 
-            const defaultProfile = document.createElement('img');
-            defaultProfile.src = 'images/default-profile.png';
-            defaultProfile.alt = 'Default Profile';
-            defaultProfile.className = 'default-profile';
-            defaultProfile.loading = 'lazy';  // Lazy load default profile
+    const defaultProfile = document.createElement('img');
+    defaultProfile.src = 'images/default-profile.png';
+    defaultProfile.alt = 'Default Profile';
+    defaultProfile.className = 'default-profile';
+    defaultProfile.loading = 'lazy';  // Lazy load default profile
 
-            const frame = document.createElement('img');
-            frame.src = `images/${image}`;
-            frame.alt = image;
-            frame.className = 'frame';
-            frame.loading = 'lazy';  // Lazy load frame
+    const frame = document.createElement('img');
+    frame.src = `images/${image}`;
+    frame.alt = image;
+    frame.className = 'frame';
+    frame.loading = 'lazy';  // Lazy load frame
 
-            const link = document.createElement('a');
-            link.href = `images/${image}`;
-            link.className = 'download-link';
-            link.textContent = 'Download';
-            link.download = image;
+    const link = document.createElement('a');
+    link.href = `images/${image}`;
+    link.className = 'download-link';
+    link.textContent = 'Download';
+    link.download = image;
 
-            wrapper.appendChild(defaultProfile);
-            wrapper.appendChild(frame);
-            item.appendChild(wrapper);
-            item.appendChild(link);
-            
-            if (isNew) {
-                const newBadge = document.createElement('img');
-                newBadge.src = 'new.png';
-                newBadge.alt = 'New';
-                newBadge.className = 'new-badge';
-                item.appendChild(newBadge);
-            }
-            
-            return item;
-        }
+    wrapper.appendChild(defaultProfile);
+    wrapper.appendChild(frame);
+    item.appendChild(wrapper);
+    item.appendChild(link);
+    
+    if (isNew) {
+        const newBadge = document.createElement('img');
+        newBadge.src = 'new.png';
+        newBadge.alt = 'New';
+        newBadge.className = 'new-badge';
+        item.appendChild(newBadge);
+    }
+    
+    return item;
+}
 
-        newImages.forEach(image => {
-            const item = createItem(image, true);
-            newReleasesContainer.appendChild(item);
-        });
+newImages.forEach(image => {
+    const item = createItem(image, true);
+    newReleasesContainer.appendChild(item);
+});
 
-        images.forEach(image => {
-            const item = createItem(image);
-            container.appendChild(item);
-        });
-    </script>
-    <script src="js/translations.js"></script>
-    <script src="js/main.js"></script>
+images.forEach(image => {
+    const item = createItem(image);
+    container.appendChild(item);
+});
+</script>
+<script src="js/translations.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
