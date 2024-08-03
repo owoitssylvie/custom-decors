@@ -53,16 +53,22 @@ languageSelector.addEventListener('change', (e) => {
     document.documentElement.lang = selectedLanguage;
     document.documentElement.dir = selectedLanguage === 'ar' ? 'rtl' : 'ltr';
 
-    const { title, description, newReleasesTitle, download, additionalText1, additionalText2, creditsLink } = translations[selectedLanguage];
+    const { title, description, newReleasesTitle, downloadlink, additionalText1, additionalText2, creditsLink } = translations[selectedLanguage];
     
     document.getElementById('title').innerHTML = title;
     document.getElementById('description').innerHTML = description;
     document.getElementById('new-releases-title').innerHTML = newReleasesTitle;
-    document.getElementById('.download-link').innerHTML = download;
+    document.getElementById('download-link').innerHTML = downloadlink;
     document.getElementById('additional-text-1').innerHTML = additionalText1;
     document.getElementById('additional-text-2').innerHTML = additionalText2;
     document.getElementById('credits-link').innerHTML = creditsLink;
-});
+
+    // Update download text for all download links
+    document.querySelectorAll('.download-link').forEach(link => {
+        link.innerHTML = translations[language].download;
+    });
+}
+);
 
 // Initialize the content based on default language
 languageSelector.dispatchEvent(new Event('change'));
