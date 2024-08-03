@@ -63,16 +63,16 @@ const translations = {
         creditsLink: "Verifică creditele"
     },
     lt: {
-        title: "test",
-        description: 'test',
-        newReleasesTitle: "test",
-        download: "test",
-        additionalText1: "test",
-        additionalText2: "test",
-        creditsLink: "test"
+        title: "Pasirinktinis Avataro Dekoras",
+        description: 'Didžiausia kolekcija Avataro Dekoracijoms skirtoms Dekoro Vencord Prijungtukui. Gali atsisiųsti Vencord <a href="https://vencord.dev/download/">čia</a>. Kai Vencord yra instaliuotas, eik į Discord nustatymus -> prijungtukai ir įjunk Dekorą! Tau reikės pakeisti metaduomenys kiekvienos dekoracijos pateikiant perkėlimui į <a href="https://www.strerr.com/en/md5_hash_chanager.html">šitą svetainę</a> ir tada atsisisiunčiant iš naujo.',
+        newReleasesTitle: "Nauji Leidimai:",
+        download: "Atsisiųsk",
+        additionalText1: "Ši elektroninė svetainė yra nekomercinė, be reklamų ir atviro kodo.",
+        additionalText2: "Kaip to, visi vaizdai priglobti šioje svetainėje yra licencijuoti pagal sąžiningą naudojimą. Jie būvo gauti per viešąjį domeną.",
+        creditsLink: "Pasižiūrėk į kreditus"
     },
     hu: {
-        title: "Saját avatár dekorációk",
+        title: "Saját Avatár Dekorációk",
         description: 'A legnagyobb avatár dekorációk gyűjteménye a Decor Vencord bővítményhez. Letöltheted a Vencord-ot erről a <a href="https://vencord.dev/download/">linkről</a>. Miután letöltötted, menj a Discord beállításokba -> Pluginok/Bővítmények és engedélyezd a dekorációkat! Az egyes dekorációknál meg kell változtatnod a metaadatot úgy, hogy a <a href="https://www.strerr.com/en/md5_hash_chanager.html">linkről</a> újratöltöd a képet az oldalról.',
         newReleasesTitle: "Új Kiadások:",
         download: "Letöltés",
