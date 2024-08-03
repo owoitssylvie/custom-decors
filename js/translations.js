@@ -43,5 +43,15 @@ const translations = {
         additionalText1: "Diese Seite ist nicht kommerziell und werbefrei und ist Open-Source.",
         additionalText2: "Als solche sind alle auf dieser Seite gehosteten Bilder unter Fair Use lizenziert. Sie wurden über die Public Domain bezogen.",
         creditsLink: "Credits anzeigen"
-    }
+    },
+    tk: {
+        title: "test",
+        description: 'test',
+        newReleasesTitle: "test",
+        download: "test",
+        additionalText1: "test",
+        additionalText2: "test",
+        creditsLink: "test"
+    },
+    
 };
