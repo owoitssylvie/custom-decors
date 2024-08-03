@@ -53,5 +53,23 @@ const translations = {
         additionalText2: "test",
         creditsLink: "test"
     },
+    ro: {
+        title: "Decorațiuni Personalizate de Avatar",
+        description: 'Cel mai mare colecție de Decorațiuni de Avatar pentru Plugin Decor Vencord. Po-ți să instalezi Vencord de <a href="https://vencord.dev/download/">aici</a>. Dupe ce ai instalat Vencord, dute la Discord setări --> Plugins și permite decor! Var trebui sa schimbi metadata pentru fiecare decorație prin reîncărcarea imaginii pe <a href="https://www.strerr.com/en/md5_hash_chanager.html">acest site</a> și pe urmă redescărcându-l.',
+        newReleasesTitle: "Lansări Noi:",
+        download: "Descarcă",
+        additionalText1: "Acest site este non-comercial și fără reclame, și este open-source.",
+        additionalText2: "Ca atare, toate imaginile găzduite pe acest site sunt licențiate conform utilizării loiale. Au fost obținute prin domeniul public.",
+        creditsLink: "Verifică creditele"
+    },
+    li: {
+        title: "test",
+        description: 'test',
+        newReleasesTitle: "test",
+        download: "test",
+        additionalText1: "test",
+        additionalText2: "test",
+        creditsLink: "test"
+    },
     
 };
