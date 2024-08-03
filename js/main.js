@@ -11,6 +11,14 @@ function changeLanguage() {
     document.querySelectorAll('.download-link').forEach(link => {
         link.innerHTML = translations[language].download;
     });
+
+    // Update new badge based on the language
+    document.querySelectorAll('.new-badge').forEach(badge => {
+        badge.src = `new-${language}.png`;
+    });
+
+    // Prevent the layout from swapping right-to-left
+    document.body.dir = 'ltr';
 }
 
 // Set default language to English
