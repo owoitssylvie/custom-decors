@@ -44,14 +44,14 @@ const translations = {
         additionalText2: "Als solche sind alle auf dieser Seite gehosteten Bilder unter Fair Use lizenziert. Sie wurden über die Public Domain bezogen.",
         creditsLink: "Credits anzeigen"
     },
-    tk: {
-        title: "test",
-        description: 'test',
-        newReleasesTitle: "test",
-        download: "test",
-        additionalText1: "test",
-        additionalText2: "test",
-        creditsLink: "test"
+    tr: {
+        title: "Özel Yapım Avatar Dekorları",
+        description: 'Discord Vencord eklentisi için en büyük özel yapım avatar koleksiyonu. Discord Vencord\'u <a href="https://vencord.dev/download/">buradan</a> indirebilirsiniz. Avatarları aktive etmek için Vencord\'u yükledikten sonra Discord ayarlarından Plugins\'e girin. Kullanacağınız her dekorasyon için resmi <a href="https://www.strerr.com/en/md5_hash_chanager.html">bu siteye</a> yükleyip tekrardan indirerek metadatayı değiştirmeniz gerekiyor.',
+        newReleasesTitle: "Yeni Çıkanlar:",
+        download: "İndir",
+        additionalText1: "Bu site kar amacı gütmeyen bir sitedir, açık kaynaklıdır, ve reklam içermez.",
+        additionalText2: "Bu çerçevede, sitede kullanılan bütün görseller adil kullanım ilkesi altında korunmaktadır. Hepsi genel kullanıma açık olarak temin edilmiştir.",
+        creditsLink: "Katkıda bulunanlara göz atın"
     },
     ro: {
         title: "Decorațiuni Personalizate de Avatar",
@@ -62,7 +62,7 @@ const translations = {
         additionalText2: "Ca atare, toate imaginile găzduite pe acest site sunt licențiate conform utilizării loiale. Au fost obținute prin domeniul public.",
         creditsLink: "Verifică creditele"
     },
-    li: {
+    lt: {
         title: "test",
         description: 'test',
         newReleasesTitle: "test",
