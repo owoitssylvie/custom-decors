@@ -71,5 +71,14 @@ const translations = {
         additionalText2: "test",
         creditsLink: "test"
     },
+    hu: {
+        title: "Saját avatár dekorációk",
+        description: 'A legnagyobb avatár dekorációk gyűjteménye a Decor Vencord bővítményhez. Letöltheted a Vencord-ot erről a <a href="https://vencord.dev/download/">linkről</a>. Miután letöltötted, menj a Discord beállításokba -> Pluginok/Bővítmények és engedélyezd a dekorációkat! Az egyes dekorációknál meg kell változtatnod a metaadatot úgy, hogy a <a href="https://www.strerr.com/en/md5_hash_chanager.html">linkről</a> újratöltöd a képet az oldalról.',
+        newReleasesTitle: "Új Kiadások:",
+        download: "Letöltés",
+        additionalText1: "Ez az oldal non-profit és reklám mentes.",
+        additionalText2: "Minden kép ezen az oldalon jogoktól mentes, és szabadon használhatóak.",
+        creditsLink: "Lásd az alkotókat"
+    },
     
 };
