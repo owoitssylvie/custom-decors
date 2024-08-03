@@ -14,50 +14,18 @@ body {
 }
 
 .language-selector {
-    display: flex;
-    top: 70px;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 10px;
-    border: 1px solid #414141;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #414141;
-    margin-bottom: 20px;
-}
-
-.language-selector label {
-    font-weight: bold;
-    margin-right: 10px;
-    color: #ffffff;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
 }
 
 .language-selector select {
-    width: 150px;
-    height: 30px;
     padding: 5px;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px;
-    background-color: #252525;
-    color: #ffffff;
-}
-
-.language-selector select:focus {
-    outline: none;
-    border-color: #aaa;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.language-selector option {
-    padding: 5px;
-    background-color: #414141;
-    color: #ffffff;
-}
-
-.language-selector option:hover {
-    background-color: #f0f0f0;
-    color: #000000;
+    border: 1px solid #ccc;
+    background-color: #5865F2;
+    color: #f5f5f5;
 }
 
 .top-image {
