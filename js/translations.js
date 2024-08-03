@@ -8,6 +8,15 @@ const translations = {
         additionalText2: "As such, all images hosted on this site are licensed under fair use. They have been obtained via the public domain.",
         creditsLink: "Check the credits"
     },
+    uk: {
+        title: "Custom Avatar Decors Innit Bruv",
+        description: 'The largest biscuit tin of Avatar Decorations for the Decor Vencord Plugin. You can download Vencord from <a href="https://vencord.dev/download/">here</a>. After installing Vencord, go to Discord settings -> Plugins and enable decor! You will need to change the metadata for each decoration by reloading the image on <a href="https://www.strerr.com/en/md5_hash_chanager.html">this site</a> and then re-downloading it. Then you can enjoy your cuppa~',
+        newReleasesTitle: "New Releases:",
+        download: "Nick It",
+        additionalText1: "This site is non-commercial and baked bean-free, and it is open-sauce.",
+        additionalText2: "As such, all images hosted on this site are licensed under fair use (Just like the British Museum???). They have been obtained via the public domain. (Suuuuuure..)",
+        creditsLink: "Check the credits"
+    },
     ar: {
         title: "افكتات افتار مخصصه",
         description: 'أكبر مجموعة من ديكورات الصور الرمزية لبرنامج يمكنك تنزيل برنامج فينكورد <a href="https://vencord.dev/download/">من هنا</a> . بعد تثبيت فينكورد ، انتقل إلى إعدادات الديسكورد -> المكونات الإضافية وقم بتمكين الديكور! ستحتاج إلى تغيير البيانات الوصفية لكل زخرفة عن طريق إعادة التحميل <a href="https://www.strerr.com/en/md5_hash_chanager.html">الصوره في هذا الموقع</a> ثم إعادة التنزيل',
