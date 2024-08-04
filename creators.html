@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creator images</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Favicon links -->
+    <link rel="icon" href="creatorimages/creator.png" sizes="16x16 32x32" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#e073c3">
+    <meta name="msapplication-TileColor" content="#e78ada">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Open Graph meta tags -->
+    <meta name="theme-color" content="#5865F2">
+    <meta property="og:title" content="Custom Avatar Decors">
+    <meta property="og:description" content="The largest collection of Avatar Decorations for the Decor Vencord Plugin.">
+    <meta property="og:image" content="https://i.imgur.com/CTkLbk3.png">
+    <meta property="og:url" content="https://jellys-space.github.io/custom-decors/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="The Largest Collection Of">
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="creatorimages/creator.png" alt="Decor" class="top-image">
+        </div>
+        <div class="title-container">
+            <h1>Creator Images</h1>
+        </div>
+        <div class="description-container">   
+            <p>Here the best decorations made by creative people will be placed. We do not hold the rights to any of these decorations. We will choose the best and put it here.</p>
+        </div>
+        <div class="new-releases-container">
+            <h2>New releases :</h2>
+            <div class="new-releases">
+                <!-- New items will be inserted here -->
+            </div>
+        </div>
+        <div class="container">
+            <!-- APNG items will be inserted here -->
+        </div>
+        <div class="additional-text">
+            <p>Thank you to everyone who helped develop this site. This site is without ads</p>
+            <p><a href="index copy.html">back to home</a></p>
+        </div>
+    </div>
+    <script>
+        const newImages = [
+            "template_1.png",
+        ];
+
+        const images = [
+            "template.png",
+            // Add more images as needed
+        ];
+
+        const container = document.querySelector('.container');
+        const newReleasesContainer = document.querySelector('.new-releases');
+
+        function createItem(image, isNew = false) {
+            const item = document.createElement('div');
+            item.className = 'item';
+
+            const wrapper = document.createElement('div');
+            wrapper.className = 'image-wrapper';
+
+            const defaultProfile = document.createElement('img');
+            defaultProfile.src = 'creatorimages/default-profile.png';
+            defaultProfile.alt = 'Default Profile';
+            defaultProfile.className = 'default-profile';
+            defaultProfile.loading = 'lazy';  // Lazy load default profile
+
+            const frame = document.createElement('img');
+            frame.src = `creatorimages/${image}`;
+            frame.alt = image;
+            frame.className = 'frame';
+            frame.loading = 'lazy';  // Lazy load frame
+
+            const link = document.createElement('a');
+            link.href = `images/${image}`;
+            link.className = 'download-link';
+            link.textContent = 'Download';
+            link.download = image;
+
+            wrapper.appendChild(defaultProfile);
+            wrapper.appendChild(frame);
+            item.appendChild(wrapper);
+            item.appendChild(link);
+            
+            if (isNew) {
+                const newBadge = document.createElement('img');
+                newBadge.src = 'new.png';
+                newBadge.alt = 'New';
+                newBadge.className = 'new-badge';
+                item.appendChild(newBadge);
+            }
+            
+            return item;
+        }
+
+        newImages.forEach(image => {
+            const item = createItem(image, true);
+            newReleasesContainer.appendChild(item);
+        });
+
+        images.forEach(image => {
+            const item = createItem(image);
+            container.appendChild(item);
+        });
+    </script>
+</body>
+</html>
