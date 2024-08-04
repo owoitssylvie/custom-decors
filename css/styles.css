@@ -13,6 +13,25 @@ body {
     overflow: auto;
 }
 
+.button-container {
+    position: fixed;
+    top: 10px; /* Adjust the distance from the top */
+    right: 10px; /* Adjust the distance from the right */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+.image-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.image-button img {
+    width: 90px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
 .language-selector {
     position: fixed;
     top: 10px;
