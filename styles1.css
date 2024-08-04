@@ -57,3 +57,24 @@ ul {
 ul li {
     margin: 5px 0;
 }
+
+a {
+    color: #5865f2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+.Home {
+    align-items: center;
+}
