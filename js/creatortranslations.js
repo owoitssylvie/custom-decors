@@ -1,15 +1,15 @@
 const translations = {
     en: {
-        title: "Custom Avatar Decors",
-        description: 'The largest collection of Avatar Decorations for the Decor Vencord Plugin. You can download Vencord from <a href="https://vencord.dev/download/">here</a>. After installing Vencord, go to Discord settings -> Plugins and enable decor! You will need to change the metadata for each decoration by reloading the image on <a href="https://www.strerr.com/en/md5_hash_chanager.html">this site</a> and then re-downloading it.',
-        newReleasesTitle: "New Releases:",
+        title: "Creator Decors",
+        description: 'The Decors on this page are provided by their artists and as such are more special and unique than the main page collection. Remember, due to how Decor stores its files, you will need to change the metadata of each downloaded decor before you can use it yourself. You can do that by visiting <a href="https://www.strerr.com/en/md5_hash_chanager.html">this site</a> and then re-downloading the image. If it still fails, try <a href="https://ezgif.com/resize">this site instead</a> and making it like 99% size</a>.',
+        newReleasesTitle: "Featured Creator (sharsame):",
         download: "Download",
-        additionalText1: "This site is non-commercial and ad-free, and it is open-source.",
-        additionalText2: "As such, all images hosted on this site are licensed under fair use. They have been obtained via the public domain.",
-        creditsLink: "Check the credits"
+        additionalText1: "This website is non-commercial, no ads and open source.",
+        additionalText2: "All the images hosted on this page are provided by the artists. If any image on this page infringes on your rights, please contact me using the creators link below.",
+        creditsLink: "Check out the creators"
     },
     uk: {
-        title: "Custom Avatar Decors Innit Bruv",
+        title: "Creator Decors Innit Bruv",
         description: 'The largest biscuit tin of Avatar Decorations for the Decor Vencord Plugin. You can download Vencord from <a href="https://vencord.dev/download/">here</a>. After installing Vencord, go to Discord settings -> Plugins and enable decor! You will need to change the metadata for each decoration by reloading the image on <a href="https://www.strerr.com/en/md5_hash_chanager.html">this site</a> and then re-downloading it. Then you can enjoy your cuppa~',
         newReleasesTitle: "New Releases:",
         download: "Nick It",
