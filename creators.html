@@ -22,23 +22,42 @@
     <meta property="og:title" content="Custom Avatar Decors">
     <meta property="og:description" content="The largest collection of Avatar Decorations for the Decor Vencord Plugin.">
     <meta property="og:image" content="https://i.imgur.com/CTkLbk3.png">
-    <meta property="og:url" content="https://jellys-space.github.io/custom-decors/">
+    <meta property="og:url" content="https://jellys-space.github.io/custom-decors/creators">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="The Largest Collection Of">
+    <meta property="og:site_name" content="The Creator Collection Of">
 </head>
 <body>
+    <div class="language-selector">
+        <label for="language">Language:</label>
+        <select id="language-dropdown" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="uk">Bri'ish</option>
+            <option value="it">Italiano</option>
+            <option value="ar">اَلْعَرَبِيَّةُ</option>
+            <option value="pt">Portuguese</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="tr">Türkçe</option>
+            <option value="ro">Română</option>
+            <option value="lt">Lietuvių</option>
+            <option value="hu">Magyar</option>
+            <option value="ru">Русский</option>
+        </select>
     <div class="main-container">
         <div class="image-container">
             <img src="creatorimages/creator.png" alt="Decor" class="top-image">
         </div>
         <div class="title-container">
-            <h1>Creator Images</h1>
+            <h1>Creator Decors</h1>
         </div>
-        <div class="description-container">   
-            <p>Here the best decorations made by creative people will be placed. We do not hold the rights to any of these decorations. We will choose the best and put it here.</p>
+        <div class="description-container">
+            <p id="description">The Decors on this page are provided by their artists and as such are more special and unique than the main page collection.<br>
+            Remember, due to how Decor stores its files, you will need to change the metadata of each downloaded decor before you can use it yourself.<br>
+            You can do that by visiting <a href="https://www.strerr.com/en/md5_hash_chanager.html">this site</a> and then re-downloading the image. If it still fails, try <a href="https://ezgif.com/resize">this site instead</a> and making it like 99% size</a>."</p>
         </div>
         <div class="new-releases-container">
-            <h2>New releases :</h2>
+            <h2>Featured Creator (sharsame):</h2>
             <div class="new-releases">
                 <!-- New items will be inserted here -->
             </div>
@@ -47,8 +66,9 @@
             <!-- APNG items will be inserted here -->
         </div>
         <div class="additional-text">
-            <p>Thank you to everyone who helped develop this site. This site is without ads</p>
-            <p><a href="index">back to home</a></p>
+            <p id="additional-text-1">This website is non-commercial, no ads and open source.</p>
+            <p id="additional-text-2">All the images hosted on this page are provided by the artists. If any image on this page infringes on your rights, please contact me using the creators link below.</p>
+            <p><a id="credits-link" href="credits/creators">Check out the creators</a></p>
         </div>
     </div>
     <script>
@@ -115,5 +135,7 @@
             container.appendChild(item);
         });
     </script>
+    <script src="js/creatortranslations.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
