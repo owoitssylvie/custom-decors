@@ -17,6 +17,15 @@ const translations = {
         additionalText2: "As such, all images hosted on this site are licensed under fair use (Just like the British Museum???). They have been obtained via the public domain. (Suuuuuure..)",
         creditsLink: "Check the credits"
     },
+    it: {
+        title: "Avatar Decorati Personalizzati",
+        description: 'La più grande collezione di Avatar Decorati per il plugin di Decorazioni Vencord. Puoi installare Vencord da <a href="https://vencord.dev/download/">qui</a>. Dopo aver installato Vencord, andate nelle impostazioni di Discord -> Plugins ed abilitate Decorazioni! Cercare di cambiare i metadati per ogni decorazione ricaricando l\'immagine su <a href="https://www.strerr.com/en/md5_hash_chanager.html">questo sito</a> per poi riinstallarlo.',
+        newReleasesTitle: "Nuove Usciti:",
+        download: "Scaricamento",
+        additionalText1: "Questo sito è non commerciale e senza pubblicità, ed è anche open-source.",
+        additionalText2: "E tale, tutte le immagini su questo sito sono ospitate e concesse in licenza per uso legittimo. Sono stati ottenuto tramite il dominio pubblico.",
+        creditsLink: "Controllare i crediti"
+    },
     ar: {
         title: "افكتات افتار مخصصه",
         description: 'أكبر مجموعة من ديكورات الصور الرمزية لبرنامج يمكنك تنزيل برنامج فينكورد <a href="https://vencord.dev/download/">من هنا</a> . بعد تثبيت فينكورد ، انتقل إلى إعدادات الديسكورد -> المكونات الإضافية وقم بتمكين الديكور! ستحتاج إلى تغيير البيانات الوصفية لكل زخرفة عن طريق إعادة التحميل <a href="https://www.strerr.com/en/md5_hash_chanager.html">الصوره في هذا الموقع</a> ثم إعادة التنزيل',
@@ -88,6 +97,15 @@ const translations = {
         additionalText1: "Ez az oldal non-profit és reklám mentes.",
         additionalText2: "Minden kép ezen az oldalon jogoktól mentes, és szabadon használhatóak.",
         creditsLink: "Lásd az alkotókat"
+    },
+    ru: {
+        title: "Настраиваемые Украшения для Аватара",
+        description: 'Самая большая коллекция украшений для аватаров для плагина Decor Vencord. Вы можете скачать Vencord <a href="https://vencord.dev/">здесь</a>. После установки Vencord перейдите в Настройки Discord -> Плагины и включите Decor! Вам нужно будет изменить метаданные каждого украшения, перезагрузив его на <a href="https://www.strerr.com/en/md5_hash_chanager.html">этом сайте</a> и затем снова скачать.',
+        newReleasesTitle: "Новые Выпуски:",
+        download: "Скачать",
+        additionalText1: "Этот сайт некоммерческий, без рекламы и с открытым исходным кодом.",
+        additionalText2: "Поэтому все изображения, размещенные на этом сайте, лицензированы на условиях добросовестного использования. Они были получены из общественного достояния.",
+        creditsLink: "Посмотреть кредиты"
     },
     
 };
