@@ -33,20 +33,41 @@ body {
 }
 
 .language-selector {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    z-index: 1000;
-    font-size: 17px;
+    display: flex;
+    top: 70px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border: 1px solid #2d368d;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(133, 133, 133, 0.1);
+    background-color: #2c61d4;
+    margin-bottom: 20px;
 }
 
-.language-selector select {
+.language-selector label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+
+
+.language-selector select:focus {
+    outline: none;
+    border-color: #aaa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.language-selector option {
     padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #5865F2;
-    font-size: 15px;
-    color: #f5f5f5;
+    background-color: #1d33ac;
+    color: #ffffff;
+}
+
+.language-selector option:hover {
+    background-color: #f0f0f0;
+    color: #000000;
 }
 
 .top-image {
