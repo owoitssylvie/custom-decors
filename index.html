@@ -33,6 +33,7 @@
             <option value="uk">Bri'ish</option>
             <option value="it">Italiano</option>
             <option value="ar">اَلْعَرَبِيَّةُ</option>
+            <option value="pt">Portuguese</option>
             <option value="es">Español</option>
             <option value="fr">Français</option>
             <option value="de">Deutsch</option>
@@ -42,6 +43,11 @@
             <option value="hu">Magyar</option>
             <option value="ru">Русский</option>
         </select>
+    </div>
+    <div class="button-container">
+        <button class="image-button" onclick="navigateToPage()">
+            <img src="creatorimages/creator.png" alt="Button Image">
+        </button>
     </div>
     <div class="main-container">
         <div class="image-container">
@@ -650,6 +656,10 @@
 
 const container = document.querySelector('.container');
 const newReleasesContainer = document.querySelector('.new-releases');
+
+function navigateToPage() {
+    window.location.href = 'creator.html';
+}
 
 function createItem(image, isNew = false) {
     const item = document.createElement('div');
