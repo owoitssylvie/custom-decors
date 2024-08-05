@@ -1,5 +1,11 @@
 function changeLanguage() {
     const language = document.getElementById("language-dropdown").value;
+    
+    if (!translations[language]) {
+        console.error(`No translations found for language: ${language}`);
+        return;
+    }
+    
     document.getElementById("title").innerHTML = translations[language].title;
     document.getElementById("description").innerHTML = translations[language].description;
     document.getElementById("new-releases-title").innerHTML = translations[language].newReleasesTitle;
@@ -23,5 +29,6 @@ function changeLanguage() {
 
 // Set default language to English
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("language-dropdown").value = "en";
     changeLanguage();
 });
