@@ -12,6 +12,7 @@ function changeLanguage() {
     document.getElementById("additional-text-1").innerHTML = translations[language].additionalText1;
     document.getElementById("additional-text-2").innerHTML = translations[language].additionalText2;
     document.getElementById("credits-link").innerHTML = translations[language].creditsLink;
+    document.getElementById("creators-credits-link").innerHTML = translations[language].creatorsCreditsLink;
 
     // Update download text for all download links
     document.querySelectorAll('.download-link').forEach(link => {
