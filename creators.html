@@ -68,8 +68,7 @@
         <div class="additional-text">
             <p id="additional-text-1">This website is non-commercial, no ads and open source.</p>
             <p id="additional-text-2">As such, all images hosted on this site are licensed under fair use. They were sourced via public domain.</p>
-            <p><a id="creators-credits-link" href="credits/creators-credits.html">Creators Credits</a></p>
-            <p><a id="credits-link" href="index.html">back to home</a></p>
+            <p><a id="credits-link" href="index">back to home</a></p>
         </div>
     </div>
     <script>
@@ -96,7 +95,7 @@ const container = document.querySelector('.container');
 const newReleasesContainer = document.querySelector('.new-releases');
 
 function navigateToPage() {
-    window.location.href = 'credits/creators.html';
+    window.location.href = 'credits/creators';
 }
 
 function createItem(image, isNew = false) {
