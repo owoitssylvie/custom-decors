@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creator Images</title>
+    <title>Creators Page</title>
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Favicon links -->
-    <link rel="icon" href="creatorimages/creator.png" sizes="16x16 32x32" type="image/png">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="android-chrome-192x192.png">
@@ -22,44 +21,43 @@
     <meta property="og:title" content="Custom Avatar Decors">
     <meta property="og:description" content="The largest collection of Avatar Decorations for the Decor Vencord Plugin.">
     <meta property="og:image" content="https://i.imgur.com/CTkLbk3.png">
-    <meta property="og:url" content="https://jellys-space.github.io/custom-decors/creators">
+    <meta property="og:url" content="https://jellys-space.github.io/custom-decors/">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="The Creator Collection Of">
+    <meta property="og:site_name" content="The Largest Collection Of">
 </head>
 <body>
+    <header>
+        <label for="language">Language:</label>
+        <select id="language-dropdown" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="uk">UK English</option>
+            <option value="it">Italian</option>
+            <option value="ar">Arabic</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+            <option value="tr">Turkish</option>
+            <option value="ro">Romanian</option>
+            <option value="lt">Lithuanian</option>
+            <option value="hu">Hungarian</option>
+            <option value="ru">Russian</option>
+        </select>
+    </header>
+    </div>
     <div class="main-container">
-        <header>
-            <div class="language-selector">
-            <label for="language">Language:</label>
-            <select id="language">
-                <option value="en">English</option>
-                <option value="ar">Arabic</option>
-                <option value="es">Spanish</option>
-                <option value="fr">French</option>
-                <option value="de">German</option>
-                <option value="tr">Turkish</option>
-                <option value="ro">Romanian</option>
-                <option value="it">Italian</option>
-                <option value="hu">Hungarian</option>
-                <option value="ru">Russian</option>
-            </select>
-            </div>
-        </header>
-        
-
         <div class="image-container">
             <img src="creatorimages/creator.png" alt="Decor" class="top-image">
         </div>
         <div class="title-container">
-            <h1 data-translate="title">Creator Decors</h1>
+            <h1 id="title">Custom Avatar Decors</h1>
         </div>
-        <div class="description-container">   
-            <p data-translate="description">The Decors on this page are provided by their artists and as such are more special and unique than the main page collection.<br>
-                Remember, due to how Decor stores its files, you will need to change the metadata of each downloaded decor before you can use it yourself.<br>
-                You can do that by visiting <a href="https://www.strerr.com/en/md5_hash_chanager.html">this site</a> and then re-downloading the image. If it still fails, try <a href="https://ezgif.com/resize">this site instead</a> and making it like 99% size</a>.</p>
+        <div class="description-container">
+            <p id="description">The largest collection of Avatar Decorations for the Decor Vencord Plugin.<br>
+            You can download Vencord <a href="https://vencord.dev/">here</a>. After Vencord is installed, go to Discord Settings -> Plugins and enable Decor!<br>
+            You'll need to change the metadata of each decoration by reuploading to <a href="https://www.strerr.com/en/md5_hash_chanager.html">this site</a> and then re-downloading.</p>
         </div>
         <div class="new-releases-container">
-            <h2 data-translate="new-releases">Featured Creator (sharsame):</h2>
+            <h2 id="new-releases-title">New Releases:</h2>
             <div class="new-releases">
                 <!-- New items will be inserted here -->
             </div>
@@ -68,167 +66,91 @@
             <!-- APNG items will be inserted here -->
         </div>
         <div class="additional-text">
-            <p data-translate="thank-you">Thank you to everyone who helped develop this site. This site is without ads.</p>
-            <p><a href="index" data-translate="back-home">Back to Home</a></p>
+            <p id="additional-text-1">This website is non-commercial, no ads and open source.</p>
+            <p id="additional-text-2">As such, all images hosted on this site are licensed under fair use. They were sourced via public domain.</p>
+            <p><a id="creators-credits-link" href="credits/creators-credits.html">Creators Credits</a></p>
+            <p><a id="credits-link" href="index.html">back to home</a></p>
         </div>
     </div>
     <script>
         const newImages = [
-            "template.png",
+            "image511.png",
+            "image512.png",
+            "image513.png",
+            "image514.png",
+            "image515new.png",
+            "image516.png",
         ];
 
         const images = [
-            "template_1.png",
+            "image1.png",
+            "image2.png",
+            "image3.png",
+            "image4.png",
+            "image5.png",
+            "image6.png",
             // Add more images as needed
-        ];
+            ];
 
-        const container = document.querySelector('.container');
-        const newReleasesContainer = document.querySelector('.new-releases');
+const container = document.querySelector('.container');
+const newReleasesContainer = document.querySelector('.new-releases');
 
-        function createItem(image, isNew = false) {
-            const item = document.createElement('div');
-            item.className = 'item';
+function navigateToPage() {
+    window.location.href = 'credits/creators.html';
+}
 
-            const wrapper = document.createElement('div');
-            wrapper.className = 'image-wrapper';
+function createItem(image, isNew = false) {
+    const item = document.createElement('div');
+    item.className = 'item';
 
-            const defaultProfile = document.createElement('img');
-            defaultProfile.src = 'creatorimages/default-profile.png';
-            defaultProfile.alt = 'Default Profile';
-            defaultProfile.className = 'default-profile';
-            defaultProfile.loading = 'lazy';  // Lazy load default profile
+    const wrapper = document.createElement('div');
+    wrapper.className = 'image-wrapper';
 
-            const frame = document.createElement('img');
-            frame.src = `creatorimages/${image}`;
-            frame.alt = image;
-            frame.className = 'frame';
-            frame.loading = 'lazy';  // Lazy load frame
+    const defaultProfile = document.createElement('img');
+    defaultProfile.src = 'images/default-profile.png';
+    defaultProfile.alt = 'Default Profile';
+    defaultProfile.className = 'default-profile';
+    defaultProfile.loading = 'lazy';  // Lazy load default profile
 
-            const link = document.createElement('a');
-            link.href = `images/${image}`;
-            link.className = 'download-link';
-            link.textContent = 'Download';
-            link.download = image;
+    const frame = document.createElement('img');
+    frame.src = `images/${image}`;
+    frame.alt = image;
+    frame.className = 'frame';
+    frame.loading = 'lazy';  // Lazy load frame
 
-            wrapper.appendChild(defaultProfile);
-            wrapper.appendChild(frame);
-            item.appendChild(wrapper);
-            item.appendChild(link);
-            
-            if (isNew) {
-                const newBadge = document.createElement('img');
-                newBadge.src = 'new-creator.png';
-                newBadge.alt = 'New';
-                newBadge.className = 'new-badge';
-                item.appendChild(newBadge);
-            }
-            
-            return item;
-        }
+    const link = document.createElement('a');
+    link.href = `images/${image}`;
+    link.className = 'download-link';
+    link.textContent = 'Download';
+    link.download = image;
 
-        newImages.forEach(image => {
-            const item = createItem(image, true);
-            newReleasesContainer.appendChild(item);
-        });
+    wrapper.appendChild(defaultProfile);
+    wrapper.appendChild(frame);
+    item.appendChild(wrapper);
+    item.appendChild(link);
+    
+    if (isNew) {
+        const newBadge = document.createElement('img');
+        newBadge.src = 'new.png';
+        newBadge.alt = 'New';
+        newBadge.className = 'new-badge';
+        item.appendChild(newBadge);
+    }
+    
+    return item;
+}
 
-        images.forEach(image => {
-            const item = createItem(image);
-            container.appendChild(item);
-        });
+newImages.forEach(image => {
+    const item = createItem(image, true);
+    newReleasesContainer.appendChild(item);
+});
 
-        const translations = {
-            en: {
-                title: "Creator Images",
-                description: "The Decors on this page are provided by their artists and as such are more special and unique than the main page collection. Remember, due to how Decor stores its files, you will need to change the metadata of each downloaded decor before you can use it yourself. You can do that by visiting <a href=\"https://www.strerr.com/en/md5_hash_chanager.html\">this site</a> and then re-downloading the image. If it still fails, try <a href=\"https://ezgif.com/resize\">this site instead</a> and making it like 99% size</a>.",
-                "new-releases": "Featured Creator (sharsame):",
-                "thank-you": "This website is non-commercial, no ads and open source.</p>",
-                "back-home": "Back to Home"
-            },
-            ar: {
-                title: "صور المبدعين",
-                description: "ستكون هنا أفضل الزخارف التي صنعها أشخاص مبدعون. نحن لا نمتلك حقوق أي من هذه الزخارف. سنختار الأفضل ونضعه هنا.",
-                "new-releases": "إصدارات جديدة:",
-                "thank-you": "شكرًا لكل من ساعد في تطوير هذا الموقع. هذا الموقع بدون إعلانات.",
-                "back-home": "العودة إلى الصفحة الرئيسية"
-            },
-            es: {
-                title: "Imágenes del Creador",
-                description: "Aquí se colocarán las mejores decoraciones hechas por personas creativas. No poseemos los derechos de ninguna de estas decoraciones. Elegiremos las mejores y las pondremos aquí.",
-                "new-releases": "Nuevos Lanzamientos:",
-                "thank-you": "Gracias a todos los que ayudaron a desarrollar este sitio. Este sitio no tiene anuncios.",
-                "back-home": "Volver a Inicio"
-            },
-            fr: {
-                title: "Images du Créateur",
-                description: "Ici seront placées les meilleures décorations réalisées par des personnes créatives. Nous ne détenons pas les droits sur ces décorations. Nous choisirons les meilleures et les mettrons ici.",
-                "new-releases": "Nouvelles Sorties:",
-                "thank-you": "Merci à tous ceux qui ont aidé à développer ce site. Ce site est sans publicité.",
-                "back-home": "Retour à l'accueil"
-            },
-            de: {
-                title: "Ersteller Bilder",
-                description: "Hier werden die besten Dekorationen von kreativen Menschen platziert. Wir besitzen keine Rechte an diesen Dekorationen. Wir wählen die besten aus und stellen sie hier ein.",
-                "new-releases": "Neuerscheinungen:",
-                "thank-you": "Danke an alle, die geholfen haben, diese Seite zu entwickeln. Diese Seite ist ohne Werbung.",
-                "back-home": "Zurück zur Startseite"
-            },
-            tr: {
-                title: "Yaratıcı Görseller",
-                description: "Burada yaratıcı insanlar tarafından yapılan en iyi dekorasyonlar yer alacak. Bu dekorasyonların hiçbirinin haklarına sahip değiliz. En iyileri seçip buraya koyacağız.",
-                "new-releases": "Yeni Çıkanlar:",
-                "thank-you": "Bu sitenin geliştirilmesine yardım eden herkese teşekkür ederiz. Bu site reklamsızdır.",
-                "back-home": "Ana Sayfaya Dön"
-            },
-            ro: {
-                title: "Imagini Creatorului",
-                description: "Aici vor fi plasate cele mai bune decorațiuni realizate de oameni creativi. Nu deținem drepturile asupra niciuneia dintre aceste decorațiuni. Vom alege cele mai bune și le vom pune aici.",
-                "new-releases": "Lansări Noi:",
-                "thank-you": "Mulțumim tuturor celor care au ajutat la dezvoltarea acestui site. Acest site este fără reclame.",
-                "back-home": "Înapoi la Acasă"
-            },
-            it: {
-                title: "Immagini del Creatore",
-                description: "Qui verranno posizionate le migliori decorazioni realizzate da persone creative. Non possediamo i diritti di nessuna di queste decorazioni. Sceglieremo le migliori e le metteremo qui.",
-                "new-releases": "Nuove Uscite:",
-                "thank-you": "Grazie a tutti coloro che hanno contribuito allo sviluppo di questo sito. Questo sito è senza pubblicità.",
-                "back-home": "Torna alla Home"
-            },
-            hu: {
-                title: "Alkotói Képek",
-                description: "Itt helyezzük el a kreatív emberek által készített legjobb dekorációkat. Nem rendelkezünk ezeknek a dekorációknak a jogaival. A legjobbakat kiválasztjuk és ide tesszük.",
-                "new-releases": "Új Kiadások:",
-                "thank-you": "Köszönjük mindenkinek, aki segített az oldal fejlesztésében. Ez az oldal hirdetések nélkül van.",
-                "back-home": "Vissza a Főoldalra"
-            },
-            ru: {
-                title: "Изображения Создателя",
-                description: "Здесь будут размещены лучшие украшения, созданные творческими людьми. Мы не обладаем правами на эти украшения. Мы выберем лучшие и разместим их здесь.",
-                "new-releases": "Новые Выпуски:",
-                "thank-you": "Спасибо всем, кто помогал в разработке этого сайта. Этот сайт без рекламы.",
-                "back-home": "Вернуться на главную"
-            },
-        };
-
-        const languageSelector = document.getElementById('language');
-        languageSelector.addEventListener('change', (event) => {
-            const selectedLanguage = event.target.value;
-            applyTranslations(selectedLanguage);
-        });
-
-        function applyTranslations(language) {
-            const elementsToTranslate = document.querySelectorAll('[data-translate]');
-            elementsToTranslate.forEach(element => {
-                const key = element.getAttribute('data-translate');
-                if (translations[language] && translations[language][key]) {
-                    element.textContent = translations[language][key];
-                }
-            });
-        }
-
-        // Set default language
-        applyTranslations('en');
-        
-        
-    </script>
+images.forEach(image => {
+    const item = createItem(image);
+    container.appendChild(item);
+});
+</script>
+<script src="js/translations_creators.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
